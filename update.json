@@ -1,6 +1,6 @@
 {
   "version": "0.9.1-alpha",
-  "releaseNotes": "本次更新:激活功能改为独立组件进程运行;发布包体积从 346MB 缩减到 131MB;版本号改用语义化预发布写法;另修正若干打包与更新检查方面的问题。详见 CHANGELOG。",
+  "releaseNotes": "本次更新:\n激活功能改为独立组件进程运行\n发布包体积从 346MB 缩减到 131MB\n版本号改用语义化预发布写法\n修正若干打包与更新检查方面的问题\n详见 CHANGELOG",
   "downloadUrl": "https://github.com/CN-fuiofd/Anvil/releases/download/v0.9.1-alpha/Anvil.0.9.1-alpha.exe",
   "mandatory": false,
   "minRequiredVersion": "",
