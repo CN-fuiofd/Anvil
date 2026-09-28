@@ -6,34 +6,22 @@
   "minRequiredVersion": "",
   "notifications": [
     {
-      "id": "notice-20260704-vault",
-      "title": "密码保管器",
-      "content": "AES-256-GCM 加密 + PBKDF2 派生 + 2FA 二次验证,自动锁定,密码强度检测,密码生成器",
+      "id": "notice-20260928-activation-component",
+      "title": "激活功能改为独立组件",
+      "content": "激活核心从主程序移出,改由独立组件进程承担,两者只经命名管道交互。",
       "priority": "Success"
     },
     {
-      "id": "notice-20260704-keygen",
-      "title": "卡密生成器",
-      "content": "批量生成卡密,标准/UUID/Base32三种格式,实时预览,一键导出TXT/CSV",
+      "id": "notice-20260928-slim-package",
+      "title": "发布包体积大幅缩减",
+      "content": "从 346MB 降到 131MB:清掉约 105MB 第三方调试符号,以及一份被重复打进包的组件。",
       "priority": "Success"
     },
     {
-      "id": "notice-20260704-speedtest",
-      "title": "测速工具重做",
-      "content": "Speedtest风格圆形仪表盘 + Ping/抖动/丢包 + 下载/上传 + 一键测速 + 专业模式",
+      "id": "notice-20260928-update-check",
+      "title": "更新检查修好了",
+      "content": "此前更新地址指向一个已废弃的账号、恒返回 404;现已迁移到新地址并填入真实校验和。",
       "priority": "Notice"
-    },
-    {
-      "id": "notice-20260704-network",
-      "title": "网络配置增强",
-      "content": "新增TCP连接查看、流量统计、MTU设置、IP配置(静态/DHCP),专业模式解锁路由表与ARP表",
-      "priority": "Notice"
-    },
-    {
-      "id": "notice-20260703-repair-new",
-      "title": "修复中心新增4项功能",
-      "content": "WMI仓库修复、服务配置修复、Windows更新组件重置、用户配置文件修复,均不依赖外部工具,先检测后修复可勾选",
-      "priority": "Success"
     }
   ],
   "channels": {
