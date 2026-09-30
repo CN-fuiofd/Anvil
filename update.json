@@ -1,34 +1,34 @@
 {
-  "version": "0.9.1-alpha",
-  "releaseNotes": "本次更新:\n激活功能改为独立组件进程运行\n发布包体积从 346MB 缩减到 131MB\n版本号改用语义化预发布写法\n修正若干打包与更新检查方面的问题\n详见 CHANGELOG",
-  "downloadUrl": "https://github.com/CN-fuiofd/Anvil/releases/download/v0.9.1-alpha/Anvil.0.9.1-alpha.exe",
+  "version": "0.10.0-alpha",
+  "releaseNotes": "本次更新:\n新增「Shell 扩展管理」,可备份式禁用右键菜单与图标覆盖\n强力删除 / 终止进程会先检测并处理占用它的服务与驱动\n仪表盘改为「系统概览 + 性能监控」两页切换\n更新包启用 SHA256 强校验,校验失败会拒绝安装\n修复强力文件管理器表格列宽溢出与选中态配色\n视觉效果的生效反馈与系统设置多项修复\n注意:内核驱动不再支持在线停止,改为删除注册项后重启生效",
+  "downloadUrl": "https://github.com/CN-fuiofd/Anvil/releases/download/v0.10.0-alpha/Anvil.0.10.0-alpha.exe",
   "mandatory": false,
   "minRequiredVersion": "",
   "notifications": [
     {
-      "id": "notice-20260928-activation-component",
-      "title": "激活功能改为独立组件",
-      "content": "激活核心从主程序移出,改由独立组件进程承担,两者只经命名管道交互。",
-      "priority": "Success"
+      "id": "notice-20260930-shellext",
+      "title": "新增 Shell 扩展管理",
+      "content": "可查看并备份式禁用挂在右键菜单与图标覆盖上的 Shell 扩展,便于排查右键菜单变慢、图标显示异常这类问题。",
+      "priority": "success"
     },
     {
-      "id": "notice-20260928-slim-package",
-      "title": "发布包体积大幅缩减",
-      "content": "从 346MB 降到 131MB:清掉约 105MB 第三方调试符号,以及一份被重复打进包的组件。",
-      "priority": "Success"
+      "id": "notice-20260930-svc-driver",
+      "title": "删除与终止现在会处理服务占用",
+      "content": "有些文件删不掉、进程杀不掉,其实是被服务或驱动注册成了自己的镜像。现在会先查出来,由你决定只停止,还是连注册项一起删除。",
+      "priority": "success"
     },
     {
-      "id": "notice-20260928-update-check",
-      "title": "更新检查修好了",
-      "content": "此前更新地址指向一个已废弃的账号、恒返回 404;现已迁移到新地址并填入真实校验和。",
-      "priority": "Notice"
+      "id": "notice-20260930-driver-nostop",
+      "title": "内核驱动不再支持在线停止",
+      "content": "实测在线停止一个运行中的内核驱动会让系统蓝屏(驱动带着未取消的挂起操作被卸载)。为避免误操作,现已改为只删除注册项、重启后生效。",
+      "priority": "high"
     }
   ],
   "channels": {
     "stable": "0.0.0",
-    "pre-alpha": "0.9.1-alpha",
+    "pre-alpha": "0.10.0-alpha",
     "alpha": "0.0.0",
     "beta": "0.0.0"
   },
-  "fileChecksum": "sha256:61642cae58216ee69531b0cbdd31541dd8e6324eb948bb95fd9ba4188dc5f1f7"
+  "fileChecksum": "sha256:8850072b11d60abecd71f4abd0b82900b8b4fc787353b3d6151fc1baed43617a"
 }
