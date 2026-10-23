@@ -1,0 +1,34 @@
+{
+  "version": "0.11.0-alpha",
+  "releaseNotes": "本次更新:\n离线修复（WinPE / WinRE）已完整接通，可对离线系统执行修复\n修正多处误报成功与静默失败；系统设置 12 项开关改为经 UAC 授权后写入\n移除天空蓝主题，界面回归系统默认字体，设置页新增未保存改动提示\n发布包体积减少约 24 MB；完整说明见版本发布页",
+  "downloadUrl": "https://github.com/CN-fuiofd/Anvil/releases/download/v0.11.0-alpha/Anvil.0.11.0-alpha.exe",
+  "mandatory": false,
+  "minRequiredVersion": "",
+  "notifications": [
+    {
+      "id": "notice-20261022-offline",
+      "title": "离线修复真正接通",
+      "content": "在 WinPE / WinRE 里选定一个离线 Windows 安装后,系统文件还原、DLL 修复、注册表四张卡等都会按目标系统工作,不再作用到 PE 自己身上。写入前会先备份原值。",
+      "priority": "success"
+    },
+    {
+      "id": "notice-20261022-offline-verify",
+      "title": "离线写回仍待实机验证",
+      "content": "离线的「写回 + 写前备份落在目标盘」代码已接通,但尚未在真机 WinPE 环境实测。首次使用时请留意结果,如遇异常欢迎反馈。",
+      "priority": "high"
+    },
+    {
+      "id": "notice-20261022-theme",
+      "title": "天空蓝主题已移除",
+      "content": "主题选项现在只有暗色、亮色、跟随系统。之前选过天空蓝的配置会自动回落到亮色并写回。",
+      "priority": "success"
+    }
+  ],
+  "channels": {
+    "stable": "0.0.0",
+    "pre-alpha": "0.11.0-alpha",
+    "alpha": "0.0.0",
+    "beta": "0.0.0"
+  },
+  "fileChecksum": "sha256:bc1f45f0c9f01d3635e1454003909bb5ce099b6040caec00d03c7e1c2fc12e9c"
+}
