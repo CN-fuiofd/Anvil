@@ -1,7 +1,7 @@
 {
-  "version": "0.11.0-alpha",
-  "releaseNotes": "本次更新:\n离线修复（WinPE / WinRE）已完整接通，可对离线系统执行修复\n修正多处误报成功与静默失败；系统设置 12 项开关改为经 UAC 授权后写入\n移除天空蓝主题，界面回归系统默认字体，设置页新增未保存改动提示\n发布包体积减少约 24 MB；完整说明见版本发布页",
-  "downloadUrl": "https://github.com/CN-fuiofd/Anvil/releases/download/v0.11.0-alpha/Anvil.0.11.0-alpha.exe",
+  "version": "0.11.1-alpha",
+  "releaseNotes": "本次更新：\n更新包改为多源分块并行下载，同一网络环境下安装包下载速度提升约 20 倍\n启动画面按实际阶段推进并显示当前处理的页面；更新提示改在主窗口显示\n仪表盘新增公告横幅，可按等级展示服务器下发的通知\n修复中心的功能说明不再被截断；完整说明见版本发布页",
+  "downloadUrl": "https://github.com/CN-fuiofd/Anvil/releases/download/v0.11.1-alpha/Anvil.0.11.1-alpha.exe",
   "mandatory": false,
   "minRequiredVersion": "",
   "notifications": [
@@ -26,9 +26,9 @@
   ],
   "channels": {
     "stable": "0.0.0",
-    "pre-alpha": "0.11.0-alpha",
+    "pre-alpha": "0.11.1-alpha",
     "alpha": "0.0.0",
     "beta": "0.0.0"
   },
-  "fileChecksum": "sha256:bc1f45f0c9f01d3635e1454003909bb5ce099b6040caec00d03c7e1c2fc12e9c"
+  "fileChecksum": "sha256:969f407930ac22359f2e8dd225f5b910d94085856f5e5d8a424bfdcd57fd43af"
 }
