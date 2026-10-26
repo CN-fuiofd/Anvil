@@ -1,34 +1,22 @@
 {
-  "version": "0.11.1-alpha",
-  "releaseNotes": "本次更新：\n更新包改为多源分块并行下载，同一网络环境下安装包下载速度提升约 20 倍\n启动画面按实际阶段推进并显示当前处理的页面；更新提示改在主窗口显示\n仪表盘新增公告横幅，可按等级展示服务器下发的通知\n修复中心的功能说明不再被截断；完整说明见版本发布页",
-  "downloadUrl": "https://github.com/CN-fuiofd/Anvil/releases/download/v0.11.1-alpha/Anvil.0.11.1-alpha.exe",
+  "version": "0.12.0-alpha",
+  "releaseNotes": "本次更新：\n显示修复新增显卡驱动崩溃痕迹检测（驱动超时恢复、显卡类蓝屏、崩溃转储）与应急软件光标\n修复首次切换页面时的停顿，服务列表不再逐项抖动\n任务管理器可识别关键进程：结束前先撤销关键标记，撤销失败由用户确认后强制终止\n亮色主题整体细化，主题切换改为整屏渐变，小字整体上调一档",
+  "downloadUrl": "https://github.com/CN-fuiofd/Anvil/releases/download/v0.12.0-alpha/Anvil.0.12.0-alpha.exe",
   "mandatory": false,
   "minRequiredVersion": "",
   "notifications": [
     {
-      "id": "notice-20261022-offline",
-      "title": "离线修复真正接通",
-      "content": "在 WinPE / WinRE 里选定一个离线 Windows 安装后,系统文件还原、DLL 修复、注册表四张卡等都会按目标系统工作,不再作用到 PE 自己身上。写入前会先备份原值。",
-      "priority": "success"
-    },
-    {
-      "id": "notice-20261022-offline-verify",
-      "title": "离线写回仍待实机验证",
-      "content": "离线的「写回 + 写前备份落在目标盘」代码已接通,但尚未在真机 WinPE 环境实测。首次使用时请留意结果,如遇异常欢迎反馈。",
+      "id": "notice-20261026-0120",
+      "title": "0.12.0-alpha 更新要点",
+      "content": "离线修复已真正接通：在 WinPE / WinRE 里选定一个离线 Windows 安装后，系统文件还原、DLL 修复、注册表四张卡等都会按目标系统工作，写入前先备份原值；离线的「写回 + 写前备份落在目标盘」仍未在真机 WinPE 实测，首次使用请留意结果。主题只剩暗色、亮色、跟随系统，此前选过天空蓝的配置会自动回落到亮色并写回。显示修复新增显卡驱动崩溃痕迹检测与应急软件光标，任务管理器可识别关键进程，详见更新日志。",
       "priority": "high"
-    },
-    {
-      "id": "notice-20261022-theme",
-      "title": "天空蓝主题已移除",
-      "content": "主题选项现在只有暗色、亮色、跟随系统。之前选过天空蓝的配置会自动回落到亮色并写回。",
-      "priority": "success"
     }
   ],
   "channels": {
     "stable": "0.0.0",
-    "pre-alpha": "0.11.1-alpha",
+    "pre-alpha": "0.12.0-alpha",
     "alpha": "0.0.0",
     "beta": "0.0.0"
   },
-  "fileChecksum": "sha256:969f407930ac22359f2e8dd225f5b910d94085856f5e5d8a424bfdcd57fd43af"
+  "fileChecksum": "sha256:b9945fa4af37391b12c6501453be24028b503de3496dbb0fe9031c545dbac1d7"
 }
