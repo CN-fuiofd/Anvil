@@ -1,7 +1,7 @@
 {
-  "version": "0.12.0-alpha",
-  "releaseNotes": "本次更新：\n显示修复新增显卡驱动崩溃痕迹检测（驱动超时恢复、显卡类蓝屏、崩溃转储）与应急软件光标\n修复首次切换页面时的停顿，服务列表刷新不再逐项重绘\n任务管理器可识别关键进程：终止前先清除该标志，清除失败时由用户确认后强制终止\n亮色主题整体细化，主题切换改为整屏渐变，小字号统一上调一级",
-  "downloadUrl": "https://github.com/CN-fuiofd/Anvil/releases/download/v0.12.0-alpha/Anvil.0.12.0-alpha.exe",
+  "version": "0.12.1-alpha",
+  "releaseNotes": "本次更新：\n任务管理器循环关闭在清除关键标志后复查，避免守护型进程直接引发蓝屏；进程刷新不再占用界面线程\n切换页面时前一个页面的延迟加载会正确作废，仪表盘的实时刷新随页面启停\n日志改为攒批写入，界面执行日志上限 2000 条\n更新日志与界面提示统一为书面语，性能监控页的文字不再压到进度条",
+  "downloadUrl": "https://github.com/CN-fuiofd/Anvil/releases/download/v0.12.1-alpha/Anvil.0.12.1-alpha.exe",
   "mandatory": false,
   "minRequiredVersion": "",
   "notifications": [
@@ -14,9 +14,9 @@
   ],
   "channels": {
     "stable": "0.0.0",
-    "pre-alpha": "0.12.0-alpha",
+    "pre-alpha": "0.12.1-alpha",
     "alpha": "0.0.0",
     "beta": "0.0.0"
   },
-  "fileChecksum": "sha256:b9945fa4af37391b12c6501453be24028b503de3496dbb0fe9031c545dbac1d7"
+  "fileChecksum": "sha256:c3a38f40ad19aa849973365910122994752bac1670ef3c9ee433d6eef746c41a"
 }
